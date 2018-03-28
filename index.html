@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Racer Game</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Little Racer</h1>
+        <p>The object is to get your race car to the finish line first. Player 1 uses the right arrow to move their race car. Player 2 uses the 'd' key to move their race car. Press the "Start Race" button when ready.</p>
+      <button id="startRace" onclick="letsRace()">Start Race</button>
+      <button id="resetRace" onclick="resetRace()">Start New Race</button>
+      <h2 id="p1">Player 1 Score = <span id="p1score">0</span></h2>
+      <h2 id="p2">Player 2 Score = <span id="p2score">0</span></h2>
+      <h2>Race Starts in <span id="timer">5</span></h2>
+      <input type="radio" id="hard">Hard (Shit + Mouse Click to Remove)
+    </header>
+    <div class="track">
+      <div class="lane">
+        <div id="rcar">
+          <img id="redcar" src="images/bluemoto.png">
+        </div>
+      </div>
+      <div class="lane">
+        <div id="pcar">
+          <img id="purplecar" src="images/bluemoto.png">
+        </div>
+        </div>
+      </div>
+    <footer>
+      <h3>Created by Rey Espinosa</h3>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
